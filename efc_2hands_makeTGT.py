@@ -65,7 +65,7 @@ if __name__ == "__main__":
             df['iti'] = np.random.randint(500, 1500, len(run))
 
             # saving the tgt file:
-            fname = f'efc2_s{subNum}_day{day:02}_testing_run{r+1}.tgt'
+            fname = f'efc2h_s{subNum}_day{day:02}_testing_run{r+1}.tgt'
             df.to_csv(os.path.join('target', fname), sep='\t', index=False)
             print(f'{fname} saved!')
         
@@ -94,7 +94,7 @@ if __name__ == "__main__":
             df['iti'] = np.random.randint(500, 1500, len(run))
 
             # saving the tgt file:
-            fname = f'efc2_s{subNum}_day{day:02}_training_run{r+1}.tgt'
+            fname = f'efc2h_s{subNum}_day{day:02}_training_run{r+1}.tgt'
             df.to_csv(os.path.join('target', fname), sep='\t', index=False)
             print(f'{fname} saved!')
         
